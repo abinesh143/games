@@ -5,9 +5,11 @@ import { useRouter } from "next/navigation";
 import Footer from "@/components/Footer";
 import Slider from "@/components/Slider";
 import GameSection from "@/components/GameSection";
+import Toast from "@/components/Toast";
 
 export default function Home() {
   const [prompt, setPrompt] = useState(null);
+  const [showToast, setShowToast] = useState(false);
   const gameConfig = [
     {
       name: "Play Arcade Games",
@@ -41,9 +43,10 @@ export default function Home() {
     },
   ];
 
-  const showInstallPrompt = () => {
+  const promptInstallButton = () => {
     if (prompt) {
-      prompt.prompt()
+      prompt.prompt();
+      setShowToast(false);
     }
   };
 
@@ -58,9 +61,9 @@ export default function Home() {
 
       if (!window.matchMedia("display-mode: standalone").matches) {
         setTimeout(() => {
-          showInstallPrompt();
-        }, 5000);
-      } 
+          setShowToast(true);
+        }, 10000);
+      }
     };
 
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
@@ -80,6 +83,14 @@ export default function Home() {
         return <GameSection key={index} data={d}/>
       })}  */}
       <GameSection data={gameConfig[1]} />
+
+      {showToast ? (
+        <Toast
+          closeToast={() => setShowToast(false)}
+          triggerInstall={() => promptInstallButton()}
+        />
+      ) : null}
+
       <Footer />
     </main>
   );
