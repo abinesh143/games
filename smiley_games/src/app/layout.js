@@ -23,6 +23,9 @@ export const metadata = {
     "new games",
   ],
   themeColor: [{ color: "#fff" }],
+  verification: {
+    google: "86DlBDJhOExKKchciyhEUpjJkKbnCboJBQ-rcMCCSME",
+  },
 };
 
 export default function RootLayout({ children }) {
