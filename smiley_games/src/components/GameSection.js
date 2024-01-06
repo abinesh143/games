@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import game from "../games.json";
 import Link from "next/link";
+import Loader from "./Loading";
 
 const GameSection = (props) => {
   const [mainGame, setMainGame] = useState([]);
@@ -80,7 +81,9 @@ const GameSection = (props) => {
               );
             })
           ) : (
-            <div></div>
+            <div style={{height: 'calc(100vh - 408px)'}}>
+              <Loader />
+            </div>
           )}
         </div>
         {/* <div className="d-flex justify-content-center py-3">

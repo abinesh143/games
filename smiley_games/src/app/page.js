@@ -43,11 +43,37 @@ export default function Home() {
     },
   ];
 
+  const postUser = async () => {
+    const date = new Date();
+    const requestBody = {
+      user: "Installed",
+      date: date.toLocaleString("en-US"),
+    };
+
+    let res = await fetch("/api/user", {
+      method: "POST",
+      body: JSON.stringify(requestBody),
+    });
+
+    if (res?.status == 200) {
+      console.log("Thank You");
+    }
+  };
+
   const promptInstallButton = () => {
     if (prompt) {
       prompt.prompt();
       setShowToast(false);
+      prompt.userChoice.then((result) => {
+        if (result.outcome == "accepted") {
+          postUser();
+        } else {
+          setAppStatus("Cancel");
+        }
+        setShowToast(false);
+      });
     }
+    setShowToast(false);
   };
 
   useEffect(() => {
