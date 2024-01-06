@@ -40,7 +40,7 @@ const GameSection = (props) => {
   return (
     <div>
       <div className={`d-flex justify-content-center px-2 py-3 bg-light`}>
-        <img src="./coin.png" className="p-2"></img>
+        <img src="./coin.png" className="p-2" alt="coin"></img>
         {/* <div className="fw-bold fs-1 text-dark">{props.data.name}</div> */}
         <div className="fw-bold fs-1 text-dark">Most Played</div>
       </div>
@@ -59,7 +59,7 @@ const GameSection = (props) => {
                     <div className="pt-2 fw-bolder text-center rounded-bottom">
                       {g.name.en}
                     </div>
-                    <img src={g.assets.cover} className="p-2 img-fluid"></img>
+                    <img src={g.assets.cover} className="p-2 img-fluid" alt={g.name.en}></img>
                     <div className="d-flex flex-column justify-content-center pt-2">
                       <a
                         className={`btn zoom-in-out-box mx-3 text-white ${props.data.buttonClass}`}
@@ -70,7 +70,7 @@ const GameSection = (props) => {
                       </a>
 
                       <div className="d-flex justify-content-center my-2">
-                        <img src="./online.png" width={15} height={15}></img>
+                        <img src="./online.png" width={15} height={15} alt="online"></img>
                         <div className="text-success fw-bold font-12 px-1">
                           {Math.floor(g.gamePlays / 10000)} Users
                         </div>

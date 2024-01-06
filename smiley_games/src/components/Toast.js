@@ -1,7 +1,7 @@
 const Toast = (props) => {
   return (
     <main>
-      <div className="fixed-bottom shadow-lg rounded bg-black text-white m-2 p-2">
+      <div className="fixed-bottom shadow-lg rounded bg-black text-white m-2 p-2 tomo" >
         <div className="d-flex justify-content-between pb-2">
           <div className="mx-2 fw-semibold">Add Games to Home Screen</div>
           <div className="px-2 fw-semibold" onClick={() => props.closeToast()}>X</div>

@@ -8,10 +8,12 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Friendship Dare",
+  title: "Smiley Games",
   description:
-    "Looking for fun and exciting ways to strengthen your friendships? Explore our collection of Friendship Dare Games designed specifically for sharing on WhatsApp! Discover a wide range of entertaining and interactive dares that will bring laughter, joy, and bonding experiences to your friendships. From hilarious challenges to heartfelt questions, these games are perfect for creating memorable moments and deepening your connections. Share these Friendship Dare Games with your friends today and embark on a journey of laughter, surprises, and everlasting camaraderie. Start spreading the joy and strengthening your bonds through these engaging WhatsApp dare games!",
+    "Immerse yourself in the thrilling world of Online Games, the ultimate online gaming experience. Engage in epic battles, embark on challenging quests, and unleash your strategic prowess in this dynamic multiplayer game. With stunning graphics and seamless gameplay, Online Games transports you to a virtual realm where excitement knows no bounds",
   manifest: "/manifest.json",
+  keywords: ["online", "games", "play", "racing", "online games", "shooting games", "zombie games", "new games"],
+  themeColor: [{ color: "#fff" }],
 };
 
 export default function RootLayout({ children }) {

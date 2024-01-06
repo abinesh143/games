@@ -47,7 +47,7 @@ export default function Home() {
     const date = new Date();
     const requestBody = {
       user: "Installed",
-      date: date.toLocaleString("en-US"),
+      date: date.toLocaleString("en-GB"),
     };
 
     let res = await fetch("/api/user", {
