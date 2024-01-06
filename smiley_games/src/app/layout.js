@@ -12,13 +12,28 @@ export const metadata = {
   description:
     "Immerse yourself in the thrilling world of Online Games, the ultimate online gaming experience. Engage in epic battles, embark on challenging quests, and unleash your strategic prowess in this dynamic multiplayer game. With stunning graphics and seamless gameplay, Online Games transports you to a virtual realm where excitement knows no bounds",
   manifest: "/manifest.json",
-  keywords: ["online", "games", "play", "racing", "online games", "shooting games", "zombie games", "new games"],
+  keywords: [
+    "online",
+    "games",
+    "play",
+    "racing",
+    "online games",
+    "shooting games",
+    "zombie games",
+    "new games",
+  ],
   themeColor: [{ color: "#fff" }],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="86DlBDJhOExKKchciyhEUpjJkKbnCboJBQ-rcMCCSME"
+        />
+      </Head>
       <body className={inter.className}>
         <Navbar />
         {children}
