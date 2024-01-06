@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import "bootstrap/dist/css/bootstrap.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,15 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         {children}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-6K34PRKLQV"
+        ></script>
+        <Script strategy="lazyOnload">{`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-6K34PRKLQV');`}</Script>
       </body>
     </html>
   );
