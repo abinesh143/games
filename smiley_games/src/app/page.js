@@ -47,9 +47,10 @@ export default function Home() {
   return (
     <main className="bg-light">
       <Slider />
-      {gameConfig.map((d, index) => {
+      {/* {gameConfig.map((d, index) => {
         return <GameSection key={index} data={d}/>
-      })} 
+      })}  */}
+      <GameSection data={gameConfig[1]} />
       <Footer />
     </main>
   );

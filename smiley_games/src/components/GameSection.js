@@ -22,21 +22,36 @@ const GameSection = (props) => {
     }
   };
 
+  const mostPlayedGames = () => {
+    const filteredGames = game.games.filter((g) => {
+      return g.gamePlays > 1000000;
+    });
+    const maxPlayers = filteredGames.sort((a, b) => {
+      return b.gamePlays - a.gamePlays;
+    });
+    setMainGame(maxPlayers);
+  };
+
   useEffect(() => {
-    initializeGames();
+    // initializeGames();
+    mostPlayedGames();
   }, []);
   return (
     <div>
       <div className={`d-flex justify-content-center px-2 py-3 bg-light`}>
         <img src="./coin.png" className="p-2"></img>
-        <div className="fw-bold fs-1 text-dark">{props.data.name}</div>
+        {/* <div className="fw-bold fs-1 text-dark">{props.data.name}</div> */}
+        <div className="fw-bold fs-1 text-dark">Most Played</div>
       </div>
       <div className="container bg-light">
         <div className="row mb-2 px-1">
           {mainGame.length ? (
             mainGame.map((g, i) => {
               return (
-                <div key={i} className="col-6 col-md-3 d-flex justify-content-center p-1">
+                <div
+                  key={i}
+                  className="col-6 col-md-3 d-flex justify-content-center p-1"
+                >
                   <div
                     className={`shadow mt-3 rounded bg-white customWidth d-flex flex-column`}
                   >
@@ -68,14 +83,14 @@ const GameSection = (props) => {
             <div></div>
           )}
         </div>
-        <div className="d-flex justify-content-center py-3">
+        {/* <div className="d-flex justify-content-center py-3">
           <Link
-          href={`/${props.data.slug}`}
+            href={`/${props.data.slug}`}
             className={`btn mx-3 w-75 text-white ${props.data.buttonClass}`}
           >
             View More
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

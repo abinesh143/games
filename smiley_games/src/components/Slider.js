@@ -9,7 +9,7 @@ const Slider = () => {
         >
           <div className="carousel-inner">
             <div className="carousel-item ">
-              <a href="#">
+              <a href="https://pyk5dwtzo.play.gamezop.com/g/rkWfy2pXq0r" target="_blank">
                 <img
                   src={"https://static.gamezop.com/rkWfy2pXq0r/wall.png"}
                   className="d-block w-100"
@@ -18,7 +18,7 @@ const Slider = () => {
               </a>
             </div>
             <div className="carousel-item ">
-              <a href="#">
+              <a href="https://pyk5dwtzo.play.gamezop.com/g/ryN9EGAQa" target="_blank">
                 <img
                   src="https://static.gamezop.com/ryN9EGAQa/wall.png"
                   className="d-block w-100"
@@ -27,7 +27,7 @@ const Slider = () => {
               </a>
             </div>
             <div className="carousel-item ">
-              <a href="#">
+              <a href="https://pyk5dwtzo.play.gamezop.com/g/rkwCYBZuV" target="_blank">
                 <img
                   src="https://static.gamezop.com/rkwCYBZuV/wall.png"
                   className="d-block w-100"
@@ -36,7 +36,7 @@ const Slider = () => {
               </a>
             </div>
             <div className="carousel-item ">
-              <a href="#">
+              <a href="https://pyk5dwtzo.play.gamezop.com/g/SkhljT2fdgb" target="_blank">
                 <img
                   src="https://static.gamezop.com/SkhljT2fdgb/wall.png"
                   className="d-block w-100"
@@ -45,7 +45,7 @@ const Slider = () => {
               </a>
             </div>
             <div className="carousel-item ">
-              <a href="#">
+              <a href="https://pyk5dwtzo.play.gamezop.com/g/r1zG1h6m90H" target="_blank">
                 <img
                   src="https://static.gamezop.com/r1zG1h6m90H/wall.png"
                   className="d-block w-100"
@@ -54,7 +54,7 @@ const Slider = () => {
               </a>
             </div>
             <div className="carousel-item ">
-              <a href="#">
+              <a href="https://pyk5dwtzo.play.gamezop.com/g/BkXW1a__" target="_blank">
                 <img
                   src="https://static.gamezop.com/BkXW1a__/wall.png"
                   className="d-block w-100"
@@ -63,7 +63,7 @@ const Slider = () => {
               </a>
             </div>
             <div className="carousel-item active">
-              <a href="#">
+              <a href="https://pyk5dwtzo.play.gamezop.com/g/B1jZWUoXUIe" target="_blank">
                 <img
                   src="https://static.gamezop.com/B1jZWUoXUIe/wall.png"
                   className="d-block w-100"
