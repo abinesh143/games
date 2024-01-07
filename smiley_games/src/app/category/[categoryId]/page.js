@@ -75,7 +75,7 @@ const gameCategory = () => {
                       </a>
 
                       <div className="d-flex justify-content-center my-2">
-                        <img src="./online.png" width={15} height={15}></img>
+                        <img src="/online.png" width={15} height={15}></img>
                         <div className="text-success fw-bold font-12 px-1">
                           {Math.floor(g.gamePlays / 10000)} Users
                         </div>
