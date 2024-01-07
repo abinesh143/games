@@ -332,6 +332,19 @@
   background-color: #56ab2f;
 }
 
+.cursor {
+  cursor: pointer;
+  border: 2px solid white
+}
+
+.cursor:hover {
+  border: 2px solid black;
+}
+
+.no-underline {
+  text-decoration: none !important;
+}
+
 @media only screen and (min-width: 1050px) {
   .tomo {
     width: 350px;

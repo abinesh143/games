@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import game from "../../games.json";
+import game from "../../../games.json";
 import { useParams } from "next/navigation";
 import Loader from "@/components/Loading";
 

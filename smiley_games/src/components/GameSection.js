@@ -59,7 +59,13 @@ const GameSection = (props) => {
                     <div className="pt-2 fw-bolder text-center rounded-bottom">
                       {g.name.en}
                     </div>
-                    <img src={g.assets.cover} className="p-2 img-fluid" alt={g.name.en}></img>
+                    <Link href={`/game/${g.code}`}>
+                      <img
+                        src={g.assets.cover}
+                        className="p-2 img-fluid"
+                        alt={g.name.en}
+                      ></img>
+                    </Link>
                     <div className="d-flex flex-column justify-content-center pt-2">
                       <a
                         className={`btn zoom-in-out-box mx-3 text-white ${props.data.buttonClass}`}
@@ -70,7 +76,12 @@ const GameSection = (props) => {
                       </a>
 
                       <div className="d-flex justify-content-center my-2">
-                        <img src="./online.png" width={15} height={15} alt="online"></img>
+                        <img
+                          src="./online.png"
+                          width={15}
+                          height={15}
+                          alt="online"
+                        ></img>
                         <div className="text-success fw-bold font-12 px-1">
                           {Math.floor(g.gamePlays / 10000)} Users
                         </div>
@@ -81,7 +92,7 @@ const GameSection = (props) => {
               );
             })
           ) : (
-            <div style={{height: 'calc(100vh - 408px)'}}>
+            <div style={{ height: "calc(100vh - 408px)" }}>
               <Loader />
             </div>
           )}
