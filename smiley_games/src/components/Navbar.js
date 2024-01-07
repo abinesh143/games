@@ -79,7 +79,7 @@ const Navbar = () => {
           </div>
           <div class="offcanvas-body">
             <Link href="/" className="no-underline">
-              <h3 className="p-3 bg-light fw-bold rounded" data-bs-dismiss="offcanvas">
+              <h3 className="p-3 bg-light fw-bold text-black rounded" data-bs-dismiss="offcanvas">
                Home
               </h3>
             </Link>
@@ -90,7 +90,7 @@ const Navbar = () => {
                 className="no-underline"
               >
                 <h3
-                  className="p-3 bg-light rounded"
+                  className="p-3 bg-light rounded text-black"
                   data-bs-dismiss="offcanvas"
                 >
                   {cat.name}
