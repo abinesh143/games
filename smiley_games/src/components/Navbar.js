@@ -6,12 +6,12 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-dark bg-dark sticky-top">
       <div className="container-fluid">
-        <div className="d-flex justify-content-center">
+        <Link href="/" className="d-flex justify-content-center no-underline">
           <img src="/emogi1.webp" className="me-2" width={40} height={40} alt="Emoji"></img>
           <a className="navbar-brand fs-3 fw-bolder px-2" href="#">
             Smiley Games
           </a>
-        </div>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"

@@ -29,7 +29,7 @@ const UniqueGames = ({ params }) => {
         <div className="d-flex justify-content-center mt-sm-5 mt-1">
           <div className="w-sm-50 mx-auto shadow-lg p-3">
             <img
-              src={mrGame.assets.wall}
+              src={mrGame.assets.cover}
               class="rounded img-fluid cursor"
               alt="games"
             />
