@@ -28,11 +28,13 @@ const UniqueGames = ({ params }) => {
       {mrGame ? (
         <div className="d-flex justify-content-center mt-sm-5 mt-1">
           <div className="w-sm-50 mx-auto shadow-lg p-3">
-            <img
-              src={mrGame.assets.cover}
-              class="rounded img-fluid cursor"
-              alt="games"
-            />
+            <a href={mrGame.url} target="_blank">
+              <img
+                src={mrGame.assets.cover}
+                class="rounded img-fluid cursor"
+                alt="games"
+              />
+            </a>
             <div class="mt-3">
               <h5 class="fs-3">{mrGame.name.en}</h5>
               <p class="">{mrGame.description.en}</p>
@@ -51,6 +53,7 @@ const UniqueGames = ({ params }) => {
                   </div>
                 </div>
               </div>
+              <div className="mt-5">{mrGame.assets.square}</div>
             </div>
           </div>
         </div>
