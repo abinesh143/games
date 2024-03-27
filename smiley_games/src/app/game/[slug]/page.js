@@ -53,7 +53,7 @@ const UniqueGames = ({ params }) => {
                   </div>
                 </div>
               </div>
-              <div className="mt-5">{mrGame.assets.square}</div>
+              {/* <div className="mt-5">{mrGame.assets.square}</div> */}
             </div>
           </div>
         </div>
