@@ -87,7 +87,7 @@ export default function Home() {
 
       if (!window.matchMedia("display-mode: standalone").matches) {
         setTimeout(() => {
-          setShowToast(true);
+          // setShowToast(true);
         }, 10000);
       }
     };
