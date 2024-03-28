@@ -25,6 +25,7 @@ const UniqueGames = ({ params }) => {
 
   return (
     <main>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       {mrGame ? (
         <div className="d-flex justify-content-center mt-sm-5 mt-1">
           <div className="w-sm-50 mx-auto shadow-lg p-3">
