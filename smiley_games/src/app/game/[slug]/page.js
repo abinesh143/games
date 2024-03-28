@@ -12,6 +12,9 @@ export async function generateMetadata({ params }) {
       currentGame[0].description.en ||
       "Immerse yourself in the thrilling world of Online Games, the ultimate online gaming experience. Engage in epic battles, embark on challenging quests, and unleash your strategic prowess in this dynamic multiplayer game. With stunning graphics and seamless gameplay, Online Games transports you to a virtual realm where excitement knows no bounds",
     keywords: currentGame[0].tags.en || ["online", "games"],
+    openGraph: {
+      images: currentGame[0].assets.brick,
+    },
   };
 }
 
@@ -22,6 +25,16 @@ const UniqueGames = ({ params }) => {
     return game.code === params.slug;
   });
   const mrGame = currentGame.length ? currentGame[0] : [];
+
+  const text = `Play this amazing game with me`;
+  const newLine = "\n";
+  const shareText = encodeURIComponent(
+    `Hai,${newLine}*${
+      mrGame.name.en || "Smiley"
+    } Game*${newLine}${text}${newLine}${newLine}https://games.smileyshopy.in/game/${
+      mrGame.code
+    }`
+  );
 
   return (
     <main>
@@ -46,6 +59,13 @@ const UniqueGames = ({ params }) => {
                   class="btn btn-orange-moon px-5"
                 >
                   Play Game
+                </a>
+                <a
+                  href={`https://wa.me/?text=${shareText}`}
+                  target="_blank"
+                  class="btn btn-green-moon my-2 px-5"
+                >
+                  Share Game
                 </a>
                 <div className="d-flex justify-content-center align-items-center my-2 mx-5">
                   <img src="/online.png" width={20} height={20}></img>
